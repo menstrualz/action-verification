@@ -22,5 +22,5 @@ class BoyVerification(disnake.ui.Button):
             embed = disnake.Embed(color=Color.GRAY)
             embed.title = f"Верификация {user.name}"
             embed.description = f"Вы верифицировали пользователя {user.mention} как мальчика"
-            await user.add_roles(role)
+            await user.add_roles(role2)
             await interaction.followup.send(embed=embed, ephemeral=True)
